@@ -27,4 +27,10 @@ public class DealRequest {
     @DecimalMin(value = "0.00", inclusive = false, message = "Amount must be greater than 0")
     @DecimalMax(value = "10000000000.00", inclusive = true, message = "Amount must be less than or equal to 10,000,000,000.00")
     private BigDecimal dealAmount;
+
+    public DealRequest(String fromCurrencyISOCode, String toCurrencyISOCode, BigDecimal dealAmount) {
+        this.fromCurrencyISOCode = fromCurrencyISOCode;
+        this.toCurrencyISOCode = toCurrencyISOCode;
+        this.dealAmount = dealAmount;
+    }
 }

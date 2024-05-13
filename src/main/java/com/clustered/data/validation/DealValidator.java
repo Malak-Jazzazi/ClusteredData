@@ -10,7 +10,7 @@ public class DealValidator {
         if (request == null || request.getFromCurrencyISOCode() == null
                 || request.getToCurrencyISOCode() == null
                 || request.getDealAmount() == null) {
-            throw new DealValidationException("Invalid deal request: Missing fields");
+            throw new DealValidationException("Invalid deal request: Missing required fields");
         }
 
         if (!isValidISOCode(request.getFromCurrencyISOCode())) {

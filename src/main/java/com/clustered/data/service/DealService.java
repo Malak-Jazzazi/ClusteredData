@@ -49,7 +49,7 @@ public class DealService {
                 request.getToCurrencyISOCode(),
                 request.getDealAmount());
         if(deal.isPresent()){
-            throw new DealExistException("The Deal already exist in the Database {}");
+            throw new DealExistException("The Deal already exist in the Database");
         };
     }
 }
