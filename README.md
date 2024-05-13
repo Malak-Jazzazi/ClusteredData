@@ -6,4 +6,5 @@
 - application structure
 - swagger 3 is supported
 - create entity (Deal) and DTO (DealRequest)
-- 
+- create controller , service 
+- add exceptions , validations and logging
