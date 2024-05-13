@@ -26,7 +26,7 @@ public class DealController {
 
     @PostMapping("/create")
     public ResponseEntity<String> createDeal(@RequestBody DealRequest request) {
-
+        logger.info("Received request to create deal , {}", request);
         try {
             DealValidator.validateDealRequest(request);
         } catch (DealValidationException e) {
