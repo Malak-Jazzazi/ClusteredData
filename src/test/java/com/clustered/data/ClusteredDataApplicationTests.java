@@ -1,4 +1,4 @@
-package com.ClusteredData.ClusteredData;
+package com.clustered.data;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.ClusteredData.ClusteredData;
+package com.clustered.data;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
