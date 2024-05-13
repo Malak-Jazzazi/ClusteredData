@@ -9,12 +9,12 @@ import java.math.BigDecimal;
 public class DealRequest {
     @NotNull(message = "ISO Code cannot be null")
     @Size(min = 3, max = 3, message = "ISO Code must be 3 characters")
-    @Pattern(regexp = "^[A-Z]{2}$", message = "Country code must be a valid ISO country code")
+    @Pattern(regexp = "^[A-Z]{3}$", message = "Country code must be a valid ISO country code")
     private String fromCurrencyISOCode;
 
     @NotNull(message = "ISO Code cannot be null")
     @Size(min = 3, max = 3, message = "ISO Code must be 3 characters")
-    @Pattern(regexp = "^[A-Z]{2}$", message = "Country code must be a valid ISO country code")
+    @Pattern(regexp = "^[A-Z]{3}$", message = "Country code must be a valid ISO country code")
     private String toCurrencyISOCode;
 
     @NotNull(message = "Amount Code cannot be null")
